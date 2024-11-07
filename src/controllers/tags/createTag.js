@@ -37,6 +37,7 @@ module.exports = async (tagName, userId) => {
             throw new Error(`Tag "${tagName}" already exists`);
         }
 
+        console.log("new tag created")
         // Devolver solo tag_id y tag_name
         return {
             tag_id: newTag.tag_id,
